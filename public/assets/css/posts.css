@@ -1,0 +1,256 @@
+
+ 
+    .les-champs{            
+        background-color: #ffffff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        max-width: 580px ;
+        min-width: 270px;
+        margin-top: 20px;
+     }
+    .champ,.form-select{
+        margin-top:5px;
+        font-size:17px;
+        font-weight:500;
+        width: 98%;
+        min-width: 98%;
+        padding: 5px;
+        margin-left: 1%;      
+     }
+    .oblig::after{
+            content: " *";
+            color: red;
+        }
+    .pere-1{
+        width: 99%;     
+     }
+    .fils-1{
+        width: 100%;      
+        border-radius:8px;  
+     }
+    
+    .p1{    
+            background-color: #ffffff;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.11);   
+            border-radius: 5px;
+            margin: 7px 0.5%;
+            width:99%;
+            max-width: 580px ;
+            min-width: 200px;
+            position: relative;
+                
+        }
+            .p2{     
+                    width: 100%;  
+                    border-radius: 8px;
+                    padding-bottom: 5px;
+                    position: relative;       
+             }
+            .f1{ 
+                width: 98%;
+                margin-top: 8px;       
+                margin-left: 2%;       
+                display: flex;      
+                border-radius: 8px; 
+                position: relative;          
+             }
+                /* photo profil */
+                .f1-f1{
+                    width: 45px;                                          
+                 }
+                    .f1-f1-f1{ 
+                        border-radius: 100%;
+                        width: 40px;
+                        height: 40px;
+                        background-color:red;                  
+                     }
+                        .photo-usr{               
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            overflow: hidden;
+                         }
+                    
+                .f1-f2{
+                    width: 150px; 
+                    margin-left: 4px;
+                    position: relative;                              
+                 }
+                    /* nom user */
+                    .f1-f2-f1{
+                        width: 100%;    
+                     }
+                        .nom{
+                            font-family: 'Roboto', sans-serif;
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 600;
+                         }
+                        
+                    /* dat */
+                    .f1-f2-f2{                
+                        width: 100%;
+                        margin-top: -5px
+                        
+                     }
+                    .date{
+                            color: 	 #999999;
+                            font-size: 14px;
+                            margin-left: 3px;
+                            font-family: 'Urbanist', sans-serif;                       
+                         }
+                .f1-f3{            
+                    width: 350px;
+                    margin-left: 10px;
+                 }
+                    .f1-f3-f1{
+                        width: 100%;
+                        margin-bottom: 2px;
+                     }
+                    /* tag 1 */
+                    
+                    .tag{
+                        margin: 1px;
+                        font-size: 14px;
+                        color: #fff;
+                        font-family: 'Almarai', sans-serif;
+                        font-weight: 400;
+                        padding: 4px 3px;
+                        background-color: #0d6efd ;
+                        border-radius: 3px;
+                        
+                     }
+                    .tag:hover{
+                        background-color: #f3c510;
+                        color: #000;
+                        font-weight: bold;
+                        text-decoration: underline;;
+                     }
+                    /* tag 2 */
+            .f2{
+                margin-top: 10px ;
+             }
+                /* description */
+                .f2-f1{              
+                    margin-left: 8px ;
+                    margin-right: 8px ;
+                 }
+                    .p-description{
+                        font-size: 17px;
+                        color: #333333;
+                        font-family: 'Almarai', sans-serif;
+                     }
+            .f3{           
+                width: 100%;
+             }
+                /* photo  post */
+                .f3-f1{            
+                margin-left: 0px ;
+                    margin-top: -10px ;
+                    margin-right: 0px ;
+                    margin-bottom: 5px ;
+                    position: relative;                
+                 }
+                    .books{
+                        position: absolute;
+                        top: 50%;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 30px;
+                        opacity: 0.5;
+                        color: #333333;
+                        font-family: 'Almarai', sans-serif;
+                        font-weight:bold;
+
+                     }
+                    .photo-post{
+                        width: 100%;
+                        height: auto;
+                     }
+            .f4{
+                width: 100%;
+                display: flex;
+                margin-left: 1px ;
+                margin-top: 2px ;
+                margin-right: 1px ;
+                margin-bottom: 2px ;
+             }
+                .f4-f1{
+                    width:30%;               
+                 }
+                     /* price */
+                    .f4-f1-f1{                  
+                        margin-left: 5px;
+                     }
+                        .prix{
+                            width: 100%;
+                            color:#000;
+                            font-size: 16px;
+                            padding-top: 5px;
+                            font-weight: bold;
+                            font-family: 'Almarai', sans-serif;
+                         }
+                .f4-f2{                      
+                    display: flex;
+                    width:50%;
+                    vertical-align: middle;
+                    position: relative;
+                 }         
+                /* contact us */
+                        .f4-f2-f1{                        
+                            margin-left: 30%;                                  
+                         }
+                        .f4-f2-f2{                        
+                            margin-left: 5px;                                  
+                         }
+                .f4-f3{
+                    width:20%;              
+                     }
+                    /* suprimer partager */
+                    .f4-f3-f1{
+                        margin: 3px;
+                        margin-left: 50%;
+                     }
+                    .dropdown{
+                        overflow:hidden
+                     }
+    span{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+     }
+                    
+@media screen and (max-width:600px){
+    .f1-f1{
+        width: 45px;                                          
+            }
+    .f1-f2{
+        width: 150px; 
+        margin-left: 4px;                              
+     }
+    .f1-f3{            
+        width: 300px;
+        margin-left: 5px;
+            }
+    .p-description{
+        font-size: 15px;
+        color: #333333;
+        font-family: 'Almarai', sans-serif;
+        }
+    .tag{
+        margin: 1px;
+        font-size: 12px;
+     }
+    /* suprimer partager */
+    .f4-f3-f1{
+        margin: 3px;
+        margin-left: 15%;
+     }
+}
+        
+
+
+
+
