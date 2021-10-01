@@ -63,7 +63,7 @@
         .bouton:hover {
             background-color: #f3c510;
             color: #212529;
-            transform: scaleY(1.03);
+            transform: scale(1.03);
         }
         .icon,.titl{
             width:96%;
@@ -83,7 +83,6 @@
             position: relative;
             }
             .bullhorn{
-                color: #4d4dff;
                 font-size: 2rem;
                 z-index: 1;
                 margin-top:30%;
@@ -98,12 +97,23 @@
                 display: flex;
                 place-content: center;
                 width : 100%;
+                --fa-animation-duration: 3s;
+                --fa-animation-delay: 1s ;
+                transform: scale3d(1.1, 0.8, 1);
             }   
             .med-5{
                 top: 25%;
+                --fa-animation-duration: 2s;
+                --fa-animation-delay: 2s;
+                transform: scale3d(0.9, 0.8, 1);
+
             }
             .last-5{
+                --fa-animation-duration: 2s;
+                --fa-animation-delay: 3s;
                 top: 40%;
+                transform: scale3d(0.7, 0.8, 1);
+
             }
         @media screen and (max-width:600px){
             .bouton{
@@ -124,6 +134,26 @@
             .fs-sm{
                 font-size: 10px;
             }
+            .bullhorn{
+                margin-top:25%;
+                font-size:15px;
+                color:#212529; 
+                opacity: 0.8;
+            }
+            .first-5,.med-5,.last-5{
+                position: absolute;
+                font-size:10px;
+                top: 0%;
+                transform: scale3d(0.8, 0.8, 1);
+            }   
+            .med-5{
+                top: 20%;
+                transform: scale3d(0.7, 0.8, 1);
+            }
+            .last-5{
+                top: 40%;
+                transform: scale3d(0.6, 0.8, 1);
+            }
         }
     </style>
     <div class="but1">
@@ -137,9 +167,9 @@
                     <span class="icon"><i class="fa fa-tshirt  fa-beat" style="--fa-animation-duration: 25s;"></i></span>
                     <span class="titl fs-5">CLOTHES</span>
                 </div>
-                <div class="bouton" data-bs-toggle="modal" data-bs-target="#motor" hidden>
-                    <span class="icon"><i class="fa fa-motorcycle fa-beat" style="--fa-animation-duration: 30s;"></i></span>
-                    <span class="titl fs-5">MOTOS</span>
+                <div class="bouton" data-bs-toggle="modal" data-bs-target="#novel">
+                    <span class="icon"><i class="fa fa-book-open fa-beat" style="--fa-animation-duration: 30s;"></i></span>
+                    <span class="titl fs-5">NOVELS</span>
                 </div>
                 <div class="bouton" data-bs-toggle="modal" data-bs-target="#car" hidden>
                     <span class="icon"><i class="fa fa-car fa-beat" style="--fa-animation-duration: 35s;"></i></span>
@@ -238,7 +268,7 @@
             </div>
             <div class="fi7">
                 <div class="bouton" data-bs-toggle="modal" data-bs-target="#gaming">
-                    <span class="icon"><i class="fa fa-gamepad  fa-flip" style="--fa-flip-x: 1; --fa-flip-y: 0;--fa-animation-duration: 60s;"></i></span>
+                    <span class="icon"><i class="fa fa-gamepad  fa-beat" style="--fa-animation-duration: 30s;"></i></span>
                     <span class="titl fs-5">GAMING</span>
                 </div>
                 <div class="bouton" data-bs-toggle="modal" data-bs-target="#game">
@@ -246,39 +276,41 @@
                     <span class="titl fs-5">GAMES</span>
                 </div>
                 <div class="bouton" data-bs-toggle="modal" data-bs-target="#sport">
-                    <span class="icon"><i class="fa fa-dumbbell  fa-flip" style="--fa-flip-x: 1; --fa-flip-y: 0;--fa-animation-duration: 60s;"></i></span>
+                    <span class="icon"><i class="fa fa-dumbbell fa-beat" style="--fa-animation-duration: 30s;"></i></span>
                     <span class="titl fs-5">SPORTS</span>
                 </div>
-                <style>
-                  
-                </style> 
                 <div class="bouton ultras" data-bs-toggle="modal" data-bs-target="#ultras">
-                    <span class="icon bullhorn"><i class="fa fa-bullhorn fa-beat fa-flip" style="--fa-animation-duration: 2s;"></i></span>
+                    <span class="icon bullhorn"><i class="fa fa-bullhorn fa-flip" style="--fa-animation-duration: 2s;"></i></span>
                     <span class="titl fs-5">ULTRAS</span>
-                    <div class="first-5">
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 5s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 6s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 7s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 5s;" ></i> 
-                    </div>
-                    <div class="med-5">
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 5s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 6s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 7s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 5s;" ></i>
-                    </div>
-                    <div class="last-5">
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 5s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 6s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 7s;" ></i>
-                        <i class="ultra fas fa-users fa-beat" style="--fa-animation-duration: 5s;" ></i>
-                    </div>
+                        <div class="first-5">
+                            <?php 
+                                for($i=0; $i<12 ;$i++) {
+                                    if($i < 4) {
+                                        echo '<i class="ultra fas fa-users fa-beat" ></i>';
+                                    }
+                                    if($i == 4){
+                                        echo '</div>
+                                              <div class="med-5">';
+                                    }
+                                    if($i>3 && $i<8 ){
+                                        echo '<i class="ultra fas fa-users fa-beat" ></i>';
+                                    }
+                                    if($i ==8){
+                                    echo '</div>
+                                          <div class="last-5">';
+                                    }
+                                    if($i>7 && $i<12 ){
+                                        echo '<i class="ultra fas fa-users fa-beat" ></i>';
+                                    }
+                                }
+                            ?>
+                        </div>
                 </div>
             </div>
             <div class="fi8">
-                <div class="bouton" data-bs-toggle="modal" data-bs-target="#more">
+                <div class="bouton" data-bs-toggle="modal" data-bs-target="#other">
                     <span class="icon"><i class="fa fa-plus-circle"></i></span>
-                    <span class="titl fs-5">MORE</span>
+                    <span class="titl fs-5">OTHER</span>
                 </div>
             </div>
         </div>
@@ -320,29 +352,40 @@
             background-color:;
             width: 98%;
             height: auto;
-            margin: 10px 2%;
-
-            
+            margin: 10px 2%;   
          }
         .form-control{
             width: 95%;
-            font-size: 1rem;
+            font-size: 14px;
             font-weight: 400;
             line-height: 1;
          }       
+        .form-select{
+            width: 95%;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+         }       
+        .popover,.tooltip{
+            border-radius: 5px;
+            background-color:#f3c510;
+         }
         .popover-body,.tooltip{
             color: #000;
-            background-color:#f3c510;
+            font-family: 'Cairo', sans-serif;
+            font-weight: 800;
             font-size:13px;
-            padding: 5px 8px;
+            padding: 8px 11px;
             text-align: center;
+         }
+        .hov{
+            transition: transform 0.5s;
+         }
+        .hov:hover{
+            transform: scale(1.5);
          }
         .bs-popover-top>.popover-arrow::after{
             border-top-color: #f3c510;
-         }
-         .fw-l{
-            font-weight: 400;
-            font-family: Rubik,Roboto,Tajawal,-apple-system,BlinkMacSystemFont,Helvetica Neue,sans-serif;
          }
         .tag-1,.tag-1{
             
@@ -379,7 +422,70 @@
                     <div class="tags-1">
                         <div class="cont-sm">
                             <div class="dv-tag">
-                            <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل بين جميع النواحي"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
+                                <select name="city" id="city" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
+                                    <option selected value="Casablanca">Casablanca</option>
+                                        <option value="CASABLANCA" >raba</option>
+                                        <option value="CASABLANCA" >marakech</option>
+                                </select> 
+                            </div>
+                            <div class="dv-tag">
+                                <label for="type" class="form-label">Type&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content=" حدد نوع المنشور بيع أو طلب شراء"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
+                                <select name="type" id="type" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
+                                    <option selected value="sale">Sale</option>
+                                        <option value="order" >Order</option>
+                                </select> 
+                            </div>
+                            <div class="dv-tag">
+                                <label for="level" class="form-label">Level&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد المستوى الدراسي"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
+                                <select name="level" id="level" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
+                                        <option selected value="1ère Primaire" >1ère Primaire</option>
+                                </select> 
+                            </div>
+                        </div>
+                        <div class="cont-sm">
+                            <div class="dv-tag">
+                                <label for="education" class="form-label">Education&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد نوع التعليم عمومي خصوصي"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
+                                <select name="###" id="education" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
+                                    <option selected value="Public">Public</option>
+                                    <option value="Privée">Privée</option>
+                                </select> 
+                            </div>
+                            <div class="dv-tag">
+                                <label for="branch" class="form-label">Branch&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الفرع الشعبة أو المسلك"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <input name="###" type="text" class="shadow-sm p-2 form-control" id="branch" list="datalistOptions" type="text" placeholder="Type to search..." dir="auto">
+                                    <datalist id="datalistOptions">
+                                        <option value="Tronc Commun">
+                                    </datalist>  
+                            </div>
+                            <div class="dv-tag">
+                                <label for="option" class="form-label">Option&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <input name="" type="text" class="shadow-sm p-2 form-control" id="option" list="datalistOptions" type="text"  placeholder="Type to search..." dir="auto">
+                                    <datalist id="datalistOptions">
+                                        <option value="ARABE">
+                                        <option value="BIOF">BIOF</option>
+                                    </datalist>  
+                            </div>
+                        </div>
+                        <div class="cont-sm">
+                            <div class="dv-tag">
+                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <input name="" type="text" class="shadow-sm p-2 form-control" list="datalistOptions" type="text" id="city" placeholder="Type to search..." dir="auto">
+                                    <datalist id="datalistOptions">
+                                        <option value="CasaBlanca">
+                                        <option value="الحوز">
+                                    </datalist>  
+                            </div>
+                            <div class="dv-tag">
+                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <input name="" type="text" class="shadow-sm p-2 form-control" list="datalistOptions" type="text" id="city" placeholder="Type to search..." dir="auto">
+                                    <datalist id="datalistOptions">
+                                        <option value="CasaBlanca">
+                                        <option value="الحوز">
+                                    </datalist>  
+                            </div>
+                            <div class="dv-tag">
+                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
                                 <input name="" type="text" class="shadow-sm p-2 form-control" list="datalistOptions" type="text" id="city" placeholder="Type to search..." dir="auto">
                                     <datalist id="datalistOptions">
                                         <option value="CasaBlanca">
@@ -387,34 +493,7 @@
                                     </datalist>  
                             </div>
                         </div>
-                        <div class="cont-sm">
-                            <div class="dv-tag">
-                                TAGS  
-                            </div>
-                            <div class="dv-tag">
-                                TAGS
-                            </div>
-                            <div class="dv-tag">
-                                TAGS
-                            </div>
-                        </div>
-                        <div class="cont-sm">
-                            <div class="dv-tag">
-                                TAGS
-
-                                
-                            </div>
-                            <div class="dv-tag">
-                                TAGS
-
-
-                            </div>
-                            <div class="dv-tag">
-                                TAGS
-
-
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="tags-2">
                         <div class="cont-sm">
@@ -479,6 +558,7 @@
                         <select name="city" id="city"  class="form-select" aria-label="Default select example" required>
                         <option selected value="" disabled>Ville</option>
                             <option value="CASABLANCA" >CASABLANCA</option>
+                            <input name=""  class="shadow-sm  form-control" list="datalistOptions" type="text" id="city" placeholder="Type to search..." >
                             
                         </select>
                         <small class="oblig" style="margin-left: 10px;font-size:12px;">(champ obligatoire)</small>

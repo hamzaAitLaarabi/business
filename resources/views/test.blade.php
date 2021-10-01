@@ -35,6 +35,24 @@
 </button>
 
 
+<!-- form select  -->
+                            <div class="dv-tag">
+                                <label for="###" class="form-label">###&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل بين جميع النواحي"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
+                                <select name="###" id="###" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
+                                    <option selected value="#">#</option>
+                                        <option value="#" ></option>
+                                        <option value="#" ></option>
+                                </select> 
+                            </div>
+<!-- form datalist -->
+                            <div class="dv-tag">
+                                <label for="###" class="form-label">Cit&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <input name="" type="text" class="shadow-sm p-2 form-control" list="datalistOptions" type="text" id="###" placeholder="Type to search..." dir="auto">
+                                    <datalist id="datalistOptions">
+                                        <option value="#">
+                                        <option value="#">
+                                    </datalist>  
+                            </div>
 
 
 
