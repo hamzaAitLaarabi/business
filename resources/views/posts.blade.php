@@ -459,38 +459,39 @@
                                     </datalist>  
                             </div>
                             <div class="dv-tag">
-                                <label for="option" class="form-label">Option&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي"><i class="far text-muted fa-question-circle fs-13"></i></span>
-                                <input name="" type="text" class="shadow-sm p-2 form-control" id="option" list="datalistOptions" type="text"  placeholder="Type to search..." dir="auto">
-                                    <datalist id="datalistOptions">
-                                        <option value="ARABE">
-                                        <option value="BIOF">BIOF</option>
-                                    </datalist>  
+                                <label for="option" class="form-label">Option&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي إنجليزي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <select name="###" type="text" class="shadow-sm p-2 form-select" id="option" aria-label="Default select example" dir="auto" required>
+                                    <option selected value="Arabe">ARABE</option>
+                                    <option value="biof">BIOF</option>
+                                    <option value="English">ENGLISH</option>
+                                </select>   
                             </div>
                         </div>
                         <div class="cont-sm">
                             <div class="dv-tag">
-                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
-                                <input name="" type="text" class="shadow-sm p-2 form-control" list="datalistOptions" type="text" id="city" placeholder="Type to search..." dir="auto">
-                                    <datalist id="datalistOptions">
-                                        <option value="CasaBlanca">
-                                        <option value="الحوز">
-                                    </datalist>  
+                                <label for="tag_7" class="form-label">Tag&nbsp;7&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد نوع الباقة كتب، دفاتر الدروس مكتوبة بخط اليد، أو الإثنان معا، أو باقة الكترونية كاملة"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <select name="###" type="text" class="shadow-sm p-2 form-select" id="tag_7" aria-label="Default select example" dir="auto">
+                                    <option selected value="Livres">Livres</option>
+                                    <option value="Cahiers">Cahiers de cours</option>
+                                    <option value="Livres et Cahiers">Livres et Cahiers</option>
+                                    <option value="PDF">PDF</option>
+                                </select>   
                             </div>
                             <div class="dv-tag">
-                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
-                                <input name="" type="text" class="shadow-sm p-2 form-control" list="datalistOptions" type="text" id="city" placeholder="Type to search..." dir="auto">
-                                    <datalist id="datalistOptions">
-                                        <option value="CasaBlanca">
-                                        <option value="الحوز">
-                                    </datalist>  
+                                <label for="option" class="form-label">Option&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي إنجليزي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <select name="###" type="text" class="shadow-sm p-2 form-select" id="option" aria-label="Default select example" dir="auto">
+                                    <option selected value="Arabe">ARABE</option>
+                                    <option value="BIOF">BIOF</option>
+                                    <option value="English">ENGLISH</option>
+                                </select>   
                             </div>
                             <div class="dv-tag">
-                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل لجميع النواحي"><i class="far text-muted fa-question-circle fs-13"></i></span>
-                                <input name="" type="text" class="shadow-sm p-2 form-control" list="datalistOptions" type="text" id="city" placeholder="Type to search..." dir="auto">
-                                    <datalist id="datalistOptions">
-                                        <option value="CasaBlanca">
-                                        <option value="الحوز">
-                                    </datalist>  
+                                <label for="option" class="form-label">Option&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي إنجليزي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <select name="###" type="text" class="shadow-sm p-2 form-select" id="option" aria-label="Default select example" dir="auto">
+                                    <option selected value="Arabe">ARABE</option>
+                                    <option value="BIOF">BIOF</option>
+                                    <option value="English">ENGLISH</option>
+                                </select>   
                             </div>
                         </div>
                         
@@ -773,7 +774,7 @@
 
 @endforeach
 <head>
-<link rel="stylesheet" href="{{ asset('assets\css\posts.css') }}">
+
 </head>
 
 <style>

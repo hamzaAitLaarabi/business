@@ -1,0 +1,82 @@
+
+/* div,span{
+    border: 1px solid red;
+    margin: 1;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: auto;
+    display: grid;
+    margin: 0px;
+    place-items: center;
+  }
+a {
+    text-decoration: none;
+}
+.after::after {
+    content:"*";
+    color:red;
+}
+
+::selection {
+    color: #f3c510;
+    background-color: black;
+}
+
+
+  
+    
+/*#### init____form______with______flash_______message #### */
+        .div_extr {
+            background-color: #b3e0ff;
+            margin-top: 20px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.11);   
+            margin: 7px 0.5%;
+            width: 99%;
+            max-width: 600px ;
+            min-width: 200px;
+        }
+
+        .div_itr {
+            margin: 5%;
+            width: 90%;  
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;     
+        }
+
+        .flash {
+            margin: 0 5%;
+            padding: 10px;
+            background-color: #f3c510;
+            color: black;
+            font-size: 18px;
+            width: 90%;
+            border-radius: 5px;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid yellow;
+        }
+
+        .submit {
+            display: grid;
+            place-items: center;
+        }
+
+/* #################### short css ################################# */
+    .cp {
+        cursor: pointer;
+     }
+
+    .fs-13 {
+        font-size: 12px;
+    }
+
+    

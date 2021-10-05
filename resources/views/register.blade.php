@@ -154,7 +154,5 @@
 <marquee id="marquee" behavior="" direction="right"> <img src="{{asset('assets/photos/livreur.png')}}"  alt="logoLivreur" style="width: 100px;"/></marquee>
 </div> 
 
-<!--container end.//-->
-<script  src="{{ asset('assets\js\bootstrap.bundle.min.js') }}"></script>
 </body>
 </html>

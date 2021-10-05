@@ -1,11 +1,4 @@
 <style>
-    a{
-            text-decoration: none;
-            
-        }
-    a:hover{
-            
-        }
     #nav1{
        width: 100%;
        position: sticky;
@@ -13,6 +6,7 @@
        z-index: 1000;
        padding: 0px;
        display: inline;
+       background-color: rgb(33, 37, 41, 0.8);
      }
     .name-site{
         margin-left: 2%;
@@ -59,12 +53,24 @@
         border-right: 1px groove #f3c510;
         text-align: center;
         padding: 5px 0px;
+        position: relative;
+     }
+    .dsign,.dsign2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 37, 41, 0.8);
+        clip-path: circle(28.3% at 1% 100%);
+     }
+    .dsign2{
+        clip-path: circle(28.3% at 100% 100%);
      }
     .bord:hover{
         color: #000;
-        background-color: #f3c510;
+        background-color: #f2f2f2;
         border-right: 1px solid #000;
         border-left: 1px solid #000;
+        border-bottom-left-radius:
      }
     .link{
         width: 100%;
@@ -112,7 +118,7 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav1">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav1">
 <!-- Name site --> 
     <div class="tele">
         <div class="name-site">
@@ -152,6 +158,8 @@
                 <div class="choix-1" >
                     <a  href="/">
                         <div class="bord home">
+                            <div class="dsign"></div>
+                            <div class="dsign2"></div>
                             <span class="link" id="home">HOME</span>  
                         </div>
                     </a>
