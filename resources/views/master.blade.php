@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{{ asset('assets\css\fontawesome.v6.0.0.css') }}">
         <link rel="stylesheet" href="{{ asset('assets\css\business.css') }}">
         <link rel="stylesheet" href="{{ asset('assets\css\posts.css') }}">
-        {{ View::make('fonts')}}
+        {{ View::make('links')}}
     </head>
 <body class="red-green-yellow-black ">
     {{ View::make('header')}}

@@ -4,4 +4,4 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Cairo:wght@600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Almarai&family=Cairo:wght@600&family=Roboto&display=swap" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css2?family=Almarai&family=Cairo:wght@600&family=Roboto&display=swap" rel="stylesheet">
