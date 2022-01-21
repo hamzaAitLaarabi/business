@@ -19,7 +19,8 @@
     @yield('profil')
     @yield('search')
     @yield('donate')
-    @yield('livreur')   
+    @yield('livreur')  
+     
     <script  src="{{ asset('assets\js\bootstrapV5.0.2.js') }}"></script>
     <script  src="{{ asset('assets\js\all.fontawesomeV6.0.0.js') }}"></script>
     <script  src="{{ asset('assets\js\business.js') }}"></script>

@@ -55,16 +55,6 @@
         padding: 5px 0px;
         position: relative;
      }
-    .dsign,.dsign2{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(33, 37, 41, 0.8);
-        clip-path: circle(28.3% at 1% 100%);
-     }
-    .dsign2{
-        clip-path: circle(28.3% at 100% 100%);
-     }
     .bord:hover{
         color: #000;
         background-color: #f2f2f2;
@@ -107,8 +97,8 @@
     /* div{
         border: 2px solid red;
         margin: 2px;
-    } */
-    /* span{
+    } 
+     span{
         border: 2px solid green;
         margin: 2px;
     } */
@@ -158,8 +148,6 @@
                 <div class="choix-1" >
                     <a  href="/">
                         <div class="bord home">
-                            <div class="dsign"></div>
-                            <div class="dsign2"></div>
                             <span class="link" id="home">HOME</span>  
                         </div>
                     </a>
@@ -238,6 +226,8 @@
                     <a class="link"  href="/login" id="login">Login</a>
                 </div>
                 @endif
+                <div class="bord bor">
+                
              </div>   
         </div>   
 </nav>

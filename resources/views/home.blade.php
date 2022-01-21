@@ -29,11 +29,11 @@
       }     
       }
       .icon{
-      transform: scale3d(1, 1, 10);
+      transform: scale(0.1, 0.5);
       color: red;
       }
     </style>
 
-<h1><i class="fa-solid fa-scroll  fa-3x icon" style="--fa-flip-x: 1; --fa-flip-y: 1;--fa-flip-z:1;" ></i></h1>
+<h1><i class="fa fa-scroll fa-3x fa-spin icon" style="--fa-flip-x: 1; --fa-flip-y: 0;" ></i></h1>
 
 @endsection

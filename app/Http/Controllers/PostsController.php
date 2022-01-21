@@ -195,7 +195,8 @@ class PostsController extends Controller
     public function posts()
     {
         $posts = Posts::orderBy('id','desc')->get();
-        $posts =[];
+        
+        
         return view('posts',["posts"=>$posts]);
     }
     public function delet_Anonn($id)

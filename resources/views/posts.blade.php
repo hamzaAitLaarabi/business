@@ -58,12 +58,13 @@
             box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.11);
             font-weight: bold;
             cursor: pointer;
-            transition: transform 0.3s;
+            transition: 1s;
         }
         .bouton:hover {
             background-color: #f3c510;
             color: #212529;
             transform: scale(1.03);
+            letter-spacing: 2px;
         }
         .icon,.titl{
             width:96%;
@@ -365,7 +366,8 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 1;
-         }       
+         } 
+        
         .popover,.tooltip{
             border-radius: 5px;
             background-color:#f3c510;
@@ -422,7 +424,7 @@
                     <div class="tags-1">
                         <div class="cont-sm">
                             <div class="dv-tag">
-                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك البيع على مستوى الجهة يتم التوصيل بين جميع النواحي"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
+                                <label for="city" class="form-label">City&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="يمكنك النشر على مستوى الجهة يتم التوصيل بين جميع النواحي"><i class="far text-muted fa-question-circle fs-13 fa-flip" style="animation-duration: 10s"></i></span>
                                 <select name="city" id="city" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
                                     <option selected value="Casablanca">Casablanca</option>
                                         <option value="CASABLANCA" >raba</option>
@@ -430,16 +432,18 @@
                                 </select> 
                             </div>
                             <div class="dv-tag">
-                                <label for="type" class="form-label">Type&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content=" حدد نوع المنشور بيع أو طلب شراء"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
+                                <label for="type" class="form-label">Type&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content=" .حدد نوع المنشور بيع، طلب شراء، تبادل، مجاني"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
                                 <select name="type" id="type" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
-                                    <option selected value="sale">Sale</option>
-                                        <option value="order" >Order</option>
+                                    <option selected value="vente">Vente</option>
+                                        <option value="achat" >Achat</option>
+                                        <option value="reprise" >Reprise</option>
+                                        <option value="gratuit" >Gratuit</option>
                                 </select> 
                             </div>
                             <div class="dv-tag">
                                 <label for="level" class="form-label">Level&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد المستوى الدراسي"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
                                 <select name="level" id="level" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
-                                        <option selected value="1ère Primaire" >1ère Primaire</option>
+                                        <option selected value="1ere Primaire" >1ère Primaire</option>
                                 </select> 
                             </div>
                         </div>
@@ -447,8 +451,8 @@
                             <div class="dv-tag">
                                 <label for="education" class="form-label">Education&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد نوع التعليم عمومي خصوصي"><i class="far text-muted fa-question-circle fs-13 hov"></i></span>
                                 <select name="###" id="education" type="text"  class="shadow-sm p-2 form-select" aria-label="Default select example" dir="auto" required>
-                                    <option selected value="Public">Public</option>
-                                    <option value="Privée">Privée</option>
+                                    <option selected value="public">Public</option>
+                                    <option value="privee">Privée</option>
                                 </select> 
                             </div>
                             <div class="dv-tag">
@@ -463,30 +467,29 @@
                                 <select name="###" type="text" class="shadow-sm p-2 form-select" id="option" aria-label="Default select example" dir="auto" required>
                                     <option selected value="Arabe">ARABE</option>
                                     <option value="biof">BIOF</option>
-                                    <option value="English">ENGLISH</option>
+                                    <option value="english">ENGLISH</option>
                                 </select>   
                             </div>
                         </div>
                         <div class="cont-sm">
                             <div class="dv-tag">
-                                <label for="tag_7" class="form-label">Tag&nbsp;7&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد نوع الباقة كتب، دفاتر الدروس مكتوبة بخط اليد، أو الإثنان معا، أو باقة الكترونية كاملة"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <label for="tag_7" class="form-label">Tag&nbsp;7&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد نوع الباقة كتب(مقررات دراسية)، دفاتر الدروس بخط اليد، كتب و دفاتر، أو باقة الكترونية كاملة"><i class="far text-muted fa-question-circle fs-13"></i></span>
                                 <select name="###" type="text" class="shadow-sm p-2 form-select" id="tag_7" aria-label="Default select example" dir="auto">
                                     <option selected value="Livres">Livres</option>
                                     <option value="Cahiers">Cahiers de cours</option>
                                     <option value="Livres et Cahiers">Livres et Cahiers</option>
-                                    <option value="PDF">PDF</option>
+                                    <option value="pdf">PDF</option>
                                 </select>   
                             </div>
                             <div class="dv-tag">
-                                <label for="option" class="form-label">Option&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي إنجليزي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <label for="option" class="form-label">Tag&nbsp;8&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content=" حدد الحالة مستعملة جديدة "><i class="far text-muted fa-question-circle fs-13"></i></span>
                                 <select name="###" type="text" class="shadow-sm p-2 form-select" id="option" aria-label="Default select example" dir="auto">
-                                    <option selected value="Arabe">ARABE</option>
-                                    <option value="BIOF">BIOF</option>
-                                    <option value="English">ENGLISH</option>
+                                    <option selected value="utilisés">Utilisés</option>
+                                    <option value="neuf">Neuf</option>
                                 </select>   
                             </div>
                             <div class="dv-tag">
-                                <label for="option" class="form-label">Option&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي إنجليزي"><i class="far text-muted fa-question-circle fs-13"></i></span>
+                                <label for="option" class="form-label">Tag&nbsp;9&nbsp;</label><span class="cp" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="حدد الإختيار عربي فرنسي إنجليزي"><i class="far text-muted fa-question-circle fs-13"></i></span>
                                 <select name="###" type="text" class="shadow-sm p-2 form-select" id="option" aria-label="Default select example" dir="auto">
                                     <option selected value="Arabe">ARABE</option>
                                     <option value="BIOF">BIOF</option>
@@ -750,8 +753,8 @@
                 <div class="f4-f3">
                     <div class="f4-f3-f1">
                             <div class="dropdown">
-                                    <i style="color: rgb(255, 255, 255);" class="fa fa-ellipsis dropdown-toggle"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true" > 
-                                    <i style="color: #333333 " class="fa fa-ellipsis" aria-hidden="true"></i>     
+                                    <i style="color: rgb(0, 0, 0);" class="fa fa-ellipsis dropdown-toggle"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true" > 
+                                    <i style="color: #000" class="fa fa-ellipsis" aria-hidden="true">xx</i>     
                                     </i>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href=" /add_to_cart/{{ $post->id }}"><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp; Ajouter au panier </a></li>
@@ -771,16 +774,9 @@
             </div>
         </div>
     </div>
-
 @endforeach
-<head>
 
-</head>
 
-<style>
-   
-    
-</style>
 
 
 @endsection

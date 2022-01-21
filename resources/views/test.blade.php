@@ -8,11 +8,34 @@
         body{
             margin:0;
             padding:0;
+            display: grid;
+            min-height: 50vh;
+            place-items: center;
+            justify-content:center;
         }
-
-
-
-
+        .form-label{
+            width: 100%;
+        }
+        .dv-tag{
+            width: 200px;
+            height: 100px;
+            background: cyan;
+            display: grid;
+            place-items: center;
+            justify-content:center;
+        }
+        select:focus {
+            border: 5px solid red;
+        }
+        input:focus{
+            background-color:red;
+            padding: 30px;
+        }
+        div:focus-within {
+            background-color:green;
+            width: 400px;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +43,7 @@
 
 
 
-</button>
+
 
 
 <!-- form select  -->
@@ -41,20 +64,7 @@
                                         <option value="#">
                                     </datalist>  
                             </div>
-<pre>
 
-
-
-                °°            ha m        za
-                            hamza
-                            hamza
-                            hamzahamzahref=""
-        hdjdjd
-        ak,odnid
-kk
-
-    hamza
-    </pre>
 </body>
 </html>
 
