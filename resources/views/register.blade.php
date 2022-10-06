@@ -15,7 +15,7 @@
    <style>
 .bg,body {
     
-   /*  background-image: url("{{asset('assets/photos/register.png')}}"); */
+    background-image: url("{{asset('assets/photos/register.png')}}");
             background-size : 100% ;
             repeat : no-repeat;
     /* background-image:linear-gradient(to right, green , white); */

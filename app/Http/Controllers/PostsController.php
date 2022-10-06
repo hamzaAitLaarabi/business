@@ -195,8 +195,6 @@ class PostsController extends Controller
     public function posts()
     {
         $posts = Posts::orderBy('id','desc')->get();
-        
-        
         return view('posts',["posts"=>$posts]);
     }
     public function delet_Anonn($id)
@@ -249,6 +247,16 @@ class PostsController extends Controller
 
        
     }
-   
+    public function testget(){
+        return Panier::select("id","created_at")->orderBy('id','desc')->first();
+    }
+    public function push(Request $req)
+    {
+        $cart = new Panier;        
+        $cart->usr_id   = 17;
+        $cart->post_id  = $req->post_id;
+        $cart->save();
+        return Panier::select("created_at")->orderBy('id','desc')->first();
+    }
     
 }

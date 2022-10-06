@@ -61,8 +61,8 @@
                     <div class="center-2-1-5">
                         <div class="input-grou">
                             <label for="type" class="form-label">Type de l'article :</label>
-                            <input dir="auto" type="text" name="commande"  class="form-control" id="type" placeholder=" ... نوع العنصر : كتب، هاتف، أواني، ملابس، دراجة نارية " aria-describedby="emailHelp">
-                            <div dir="rtl" id="emailHelp" class="form-text" style="margin-right: 10px;"> في حالة الهاتف أو الحاسوب يمكنك الذهاب مع الموزع</div>
+                            <input dir="auto" type="text" name="commande"  class="form-control" id="type" placeholder=" ... نوع العنصر : كتب، هاتف، أواني، ملابس، " aria-describedby="emailHelp">
+                            <!-- <div dir="rtl" id="emailHelp" class="form-text" style="margin-right: 10px;"> في حالة الهاتف أو الحاسوب يمكنك الذهاب مع الموزع</div> -->
                         </div>
                     </div>
 <!-- prix commande -->

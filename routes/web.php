@@ -66,6 +66,8 @@ Route::post("/add_stock",[SettingsController::class,'add_stock']);
 
 
 
+Route::get("/testget",[PostsController::class,'testget']);
+Route::patch('/push', [PostsController::class, 'push']);
 
 
 

@@ -9,18 +9,22 @@
         <link rel="stylesheet" href="{{ asset('assets\css\fontawesome.v6.0.0.css') }}">
         <link rel="stylesheet" href="{{ asset('assets\css\business.css') }}">
         <link rel="stylesheet" href="{{ asset('assets\css\posts.css') }}">
+        <link rel="stylesheet" href="{{ asset('css\app.css') }}">
         {{ View::make('links')}}
     </head>
-<body class="red-green-yellow-black ">
+<body>
     {{ View::make('header')}}
+<div id="app" class="app">
+    <index/>
+</div>
     @yield('home')
     @yield('posts')
     @yield('login')
     @yield('profil')
     @yield('search')
     @yield('donate')
-    @yield('livreur')  
-     
+    @yield('livreur')
+    <script src="{{ asset('js\app.js')}}" ></script>
     <script  src="{{ asset('assets\js\bootstrapV5.0.2.js') }}"></script>
     <script  src="{{ asset('assets\js\all.fontawesomeV6.0.0.js') }}"></script>
     <script  src="{{ asset('assets\js\business.js') }}"></script>

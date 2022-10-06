@@ -11,17 +11,11 @@ class SettingsController extends Controller
         $v = $req->input('val');
         // $message_ar = $req->input('stock_ar');
         $i=[
-
-           
-
 'Perfect',
 'Veri Good',
 'Good',
 'Broken Screen ',
 'Pieces',
-
-
-
 
 ];
 
