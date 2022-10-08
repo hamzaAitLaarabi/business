@@ -11,6 +11,11 @@
         <link rel="stylesheet" href="{{ asset('assets\css\posts.css') }}">
         <link rel="stylesheet" href="{{ asset('css\app.css') }}">
         {{ View::make('links')}}
+        <link rel="stylesheet" href="https://library.azurewebsites.net/assets\css\bootstrap.v5.0.2.css">
+        <link rel="stylesheet" href="https://library.azurewebsites.net/assets\css\fontawesome.v6.0.0.css">
+        <link rel="stylesheet" href="https://library.azurewebsites.net/assets\css\business.css">
+        <link rel="stylesheet" href="https://library.azurewebsites.net/assets\css\posts.css">
+        <link rel="stylesheet" href="https://library.azurewebsites.net/css\app.css">
     </head>
 <body>
     {{ View::make('header')}}
