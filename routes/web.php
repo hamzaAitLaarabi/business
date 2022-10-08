@@ -20,6 +20,9 @@ Route::get('/logout', function () {
     Session::forget('user');
     return redirect('login');
 });
+Route::get('/test', function () {
+    return view("register");
+});
 
 Route::view('/register',"register");
 Route::view('/login',"login");
