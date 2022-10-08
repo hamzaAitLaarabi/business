@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="{{ asset('css\app.css') }}">
         {{ View::make('links')}}
     </head>
-<body>
+<body style="background: linear-gradient(90deg, rgba(0,212,255,1) 17%, rgba(81,81,236,1) 59%, rgba(86,76,255,1) 100%);">
     {{ View::make('header')}}
 <div id="app" class="app">
     <index/>
