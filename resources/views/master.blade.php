@@ -37,7 +37,7 @@
     <script  src="{{ asset('assets\js\jQueryV3.5.1.min.js') }}"></script>
     <script  src="{{ asset('assets\js\popperV2.9.2.min.js') }}"></script>
     <!-- https -->
-    <script src="https://library.azurewebsites.net/js\app.js"></script>
+    <!-- <script src="https://library.azurewebsites.net/js\app.js"></script> -->
     <script src="https://library.azurewebsites.net/assets\js\bootstrapV5.0.2.js"></script>
     <script src="https://library.azurewebsites.net/assets\js\all.fontawesomeV6.0.0.js"></script>
     <script src="https://library.azurewebsites.net/assets\js\business.js"></script>
